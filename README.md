@@ -23,7 +23,7 @@ instrument_object = serial.Serial(
 ```python
 instrument_object.input_buffer_size = 5000000  # 设置缓冲区为 5,000,000 字节
 ```
- 4. 打开串口（在 pyserial 中，创建对象时若未设置 open()，则需显式打开）
+打开串口（在 pyserial 中，创建对象时若未设置 open()，则需显式打开）
  注意：如果在创建 Serial 对象时未指定 lazy_open=True，串口会在创建时自动打开。
 ```python
 if not instrument_object.is_open:
