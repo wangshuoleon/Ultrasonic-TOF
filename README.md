@@ -23,14 +23,14 @@ instrument_object = serial.Serial(
 ```python
 instrument_object.input_buffer_size = 5000000  # 设置缓冲区为 5,000,000 字节
 ```
-### 4. 打开串口（在 pyserial 中，创建对象时若未设置 open()，则需显式打开）
-### 注意：如果在创建 Serial 对象时未指定 lazy_open=True，串口会在创建时自动打开。
+ 4. 打开串口（在 pyserial 中，创建对象时若未设置 open()，则需显式打开）
+ 注意：如果在创建 Serial 对象时未指定 lazy_open=True，串口会在创建时自动打开。
 ```python
 if not instrument_object.is_open:
     instrument_object.open()
 ```
 
-### 此时串口已打开，可以开始读写操作
+ 此时串口已打开，可以开始读写操作
 ```python
 print(f"串口 {selected_port} 已成功打开，波特率 4800，输入缓冲区大小 {instrument_object.input_buffer_size} 字节")
 ```
