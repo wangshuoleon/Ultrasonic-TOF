@@ -600,6 +600,10 @@ def send_reset_signal(serial_port: serial.Serial) -> bool:
 
 ```
 
+## 总结
+
+![逻辑框图](block_diagram.png)
+
 ## 完整的使用例程
 
 ```python
